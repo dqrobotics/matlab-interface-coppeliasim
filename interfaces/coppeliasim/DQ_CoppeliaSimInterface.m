@@ -30,7 +30,7 @@ classdef  (Abstract) DQ_CoppeliaSimInterface < handle
     methods(Abstract)
             % This method connects to CoppeliaSim.
             % Calling this function is required before anything else can happen.
-            connect(obj, host, port, TIMEOUT_IN_MILISECONDS);
+            status = connect(obj, host, port, TIMEOUT_IN_MILISECONDS);
     
             % This method enables or disables the stepped (synchronous) mode
             % for the remote API server service that the client is connected to.
