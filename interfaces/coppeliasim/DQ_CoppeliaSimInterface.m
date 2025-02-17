@@ -51,10 +51,10 @@ classdef  (Abstract) DQ_CoppeliaSimInterface < handle
     
             % This method gets the handles for a cell array of 
             % object names in the the CoppeliaSim scene.
-            handles = get_object_handles(obj,names);
+            handles = get_object_handles(obj,objectnames);
     
             % This method gets the handle for a given object in the CoppeliaSim scene. 
-            handle = get_object_handle(obj,name);
+            handle = get_object_handle(obj,objectname);
     
             % This method gets the translation of an object in the CoppeliaSim scene.
             t = get_object_translation(obj,objectname);
