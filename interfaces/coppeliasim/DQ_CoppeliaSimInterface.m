@@ -75,7 +75,7 @@ classdef  (Abstract) DQ_CoppeliaSimInterface < handle
             % This method sets the joint positions in the CoppeliaSim scene.        
             set_joint_positions(obj, jointnames, joint_positions);
     
-            % This method gets the joint positions of a robot in the CoppeliaSim scene. 
+            % This method gets the joint positions in the CoppeliaSim scene. 
             joint_positions = get_joint_positions(obj, jointnames);
     
             % This method sets the joint target positions in the CoppeliaSim scene. 
