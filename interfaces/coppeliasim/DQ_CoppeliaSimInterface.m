@@ -93,14 +93,14 @@ classdef  (Abstract) DQ_CoppeliaSimInterface < handle
             % https://www.coppeliarobotics.com/helpFiles/en/jointModes.htm
             set_joint_target_velocities(obj, jointnames, joint_target_velocities);
     
-            % This method sets the joint torques in the CoppeliaSim scene.
+            % This method sets the joint target forces in the CoppeliaSim scene.
             % It requires a dynamics-enabled scene and joints in dynamic mode with force control mode. 
             % For more information about joint modes:
             % https://www.coppeliarobotics.com/helpFiles/en/jointModes.htm
-            set_joint_torques(obj, jointnames, torques);  
+            set_joint_target_forces(obj, jointnames, torques);  
     
-            % This method gets the joint torques in the CoppeliaSim scene.
-            joint_torques = get_joint_torques(obj, jointnames);
+            % This method gets the joint forces in the CoppeliaSim scene.
+            joint_torques = get_joint_forces(obj, jointnames);
       end
 end
 
