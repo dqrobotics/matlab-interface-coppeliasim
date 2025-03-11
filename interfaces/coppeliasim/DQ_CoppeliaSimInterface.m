@@ -1,4 +1,3 @@
-
 % (C) Copyright 2011-2025 DQ Robotics Developers
 % 
 % This file is part of DQ Robotics.
@@ -85,7 +84,7 @@ classdef  (Abstract) DQ_CoppeliaSimInterface < handle
             set_joint_target_positions(obj, jointnames, joint_target_positions);
     
             % This method gets the joint velocities in the CoppeliaSim scene. 
-            joint_velocities = get_joint_velocities(obj,jointnames);
+            joint_velocities = get_joint_velocities(obj, jointnames);
     
             % This method sets the joint target velocities in the CoppeliaSim scene.
             % It requires a dynamics-enabled scene and joints in dynamic mode with velocity control mode. 
